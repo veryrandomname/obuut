@@ -191,5 +191,7 @@ end
 function love.keypressed( key, isrepeat )
     if key == "r" then
         love.load() --restart game
+    elseif key == "escape" or key == "q" then
+        love.event.push("quit")
     end
 end
